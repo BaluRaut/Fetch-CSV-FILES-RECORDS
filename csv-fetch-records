@@ -1,0 +1,21 @@
+<?php
+$file = fopen("sqlite.csv","r");
+$i=1;
+while(! feof($file))
+  {
+    $i++;
+	  $row=fgetcsv($file);
+	  print_r($row);
+	  // for first column
+	  echo $row[0];
+	  /**
+	  * second = $row[1] ;
+	   etc...
+	  */
+	  
+	  
+	}
+	
+	echo "Number of lines".$i;
+	
+	?>
